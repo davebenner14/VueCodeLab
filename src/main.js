@@ -1,8 +1,9 @@
-import Vue from 'vue'
-import App from './App.vue'
+import Vue from "vue";
+import App from "./App.vue";
+import VueCodemirrorLite from "vue-codemirror-lite";
 
-Vue.config.productionTip = false
+Vue.use(VueCodemirrorLite);
 
 new Vue({
-  render: h => h(App),
-}).$mount('#app')
+  render: (h) => h(App),
+}).$mount("#app");
