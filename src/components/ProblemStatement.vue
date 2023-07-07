@@ -38,7 +38,8 @@ export default {
             "You're adding a feature to a blogging platform where authors can edit their posts. When the author submits their changes, send a PUT request to /api/posts/:id with the updated data. Display the updated post in the user interface without refreshing the page.",
         },
         delete: {
-          beginner: "Write a function that takes an array and an index...",
+          beginner:
+            "Write a function that takes an array and an index as parameters. The function should remove the element at the given index from the array.",
           intermediate:
             "You have been tasked with creating a shopping cart for an online store. Add functionality for users to remove items from their cart.",
 

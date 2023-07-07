@@ -15,6 +15,7 @@ import "@/components/CodeEditor.css";
 export default {
   props: {
     challenge: Object,
+    currentCode: String, // declare currentCode as a prop
   },
   data() {
     return {
@@ -52,10 +53,15 @@ export default {
     require("@/assets/monokai.css");
   },
   watch: {
-    challenge: function (newChallenge) {
+    challenge(newChallenge) {
       if (newChallenge) {
-        // here you could fetch code related to the new challenge from an API, or from a static resource
-        this.code = ""; // resetting the code on every new challenge
+        this.code = ""; // reset the code on every new challenge
+      }
+    },
+    currentCode(newCode) {
+      // watch for changes in currentCode
+      if (newCode !== this.code) {
+        this.code = newCode; // update the code if currentCode changes
       }
     },
   },
