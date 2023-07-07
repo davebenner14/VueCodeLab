@@ -18,9 +18,9 @@
       <ChallengeSelector @challenge-selected="selectChallenge" />
       <div class="app-content">
         <ProblemStatement :challenge="currentChallenge" />
-        <CodeEditor :challenge="currentChallenge" />
-        <ConsoleOutput :code="currentCode" />
+        <CodeEditor :challenge="currentChallenge" @code-updated="updateCode" />
       </div>
+      <ConsoleOutput :code="currentCode" />
     </div>
   </div>
 </template>
@@ -47,6 +47,9 @@ export default {
     };
   },
   methods: {
+    updateCode(newCode) {
+      this.currentCode = newCode;
+    },
     selectChallenge(challenge) {
       this.currentChallenge = challenge;
     },

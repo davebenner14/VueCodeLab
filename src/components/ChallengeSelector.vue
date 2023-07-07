@@ -28,7 +28,7 @@ export default {
     return {
       selectedCrudOperation: null,
       crudOperations: ["Create", "Read", "Update", "Delete"],
-      difficultyLevels: ["Beginner", "Intermediate", "Advanced"],
+      difficultyLevels: ["Beginner", "Intermediate", "Expert"],
     };
   },
   methods: {

@@ -1,7 +1,7 @@
 .editor {
   box-sizing: border-box;
   height: 100%;
-  width: 100%;
+  width: 50%; /* Change this line */
   padding: 20px;
 }
 
