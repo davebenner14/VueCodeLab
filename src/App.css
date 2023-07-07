@@ -1,0 +1,40 @@
+body {
+  background-color: #333333;
+  color: #ffffff; /* Set the default font color to white */
+}
+
+.main-container {
+  text-align: center;
+}
+
+.title {
+  font-size: 36px;
+  margin-top: 100px;
+}
+
+.description {
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+.crud,
+.description span {
+  color: #41b883;
+}
+
+.description span:not(.crud) {
+  color: inherit; /* Inherit the font color from the parent (white) */
+}
+
+.description {
+  font-size: 18px;
+  margin-top: 20px;
+  margin-left: 20%;
+  margin-right: 20%;
+  text-align: justify;
+  text-align: center;
+}
+.app-content {
+  display: flex;
+  justify-content: space-between;
+}
